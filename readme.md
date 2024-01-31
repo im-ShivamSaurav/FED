@@ -1,6 +1,6 @@
 # Hi this is Shivam Saurav
 - This is the project for the KIIT FED recruitment process.
-- Click on the link: <a href="shivamfed.netlify.app">Click Here</a>
+- Click on the link to view the project website : <a href="https://shivamfed.netlify.app/">Click Here</a>
 
 ![image](https://github.com/im-ShivamSaurav/FED/assets/85785778/f001fe0f-52a3-42db-a9f6-8adfe7800a83)
 
