@@ -10,15 +10,15 @@ const Carausal = () => {
   })
   const img = [
     {
+      index: 0,
+      src: logo,
+    },
+    {
       index: 1,
       src: logo,
     },
     {
       index: 2,
-      src: logo,
-    },
-    {
-      index: 3,
       src: logo,
     },
   ];
