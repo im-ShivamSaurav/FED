@@ -5,7 +5,7 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 const Carausal = () => {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   useEffect(()=>{
-    const slideInterval = setInterval(handleNextClick,2000);
+    const slideInterval = setInterval(handleNextClick,3000);
     return()=>clearInterval(slideInterval);
   })
   const img = [
@@ -21,10 +21,18 @@ const Carausal = () => {
       index: 2,
       src: logo,
     },
+    {
+      index: 3,
+      src: logo,
+    },
+    {
+      index: 4,
+      src: logo,
+    },
   ];
 
   const handlePrevClick = () => {
-    if (activeImageIndex === 0) setActiveImageIndex(img[img.lenght - 1].index);
+    if (activeImageIndex === 0) setActiveImageIndex(img[img.length - 1].index);
     else setActiveImageIndex(activeImageIndex-1);
   };
 
@@ -50,7 +58,7 @@ const Carausal = () => {
       >
         <FaAngleRight />
       </button>
-      <div className="absolute left-[50%] translate-x-[-50%] bottom-2 flex gap-3">
+      <div className="absolute left-[3rem] bottom-[3rem] flex gap-3">
         {img.map((e,i)=>(<div className={"hover:cursor-pointer h-[0.8rem] w-[0.8rem] rounded-full "+(i===activeImageIndex?" bg-[#F45725] hover:[#F45725] scale-125":"bg-white/50 hover:bg-white")} onClick={()=>{setActiveImageIndex(i)}}></div>))}
       </div>
     </div>
