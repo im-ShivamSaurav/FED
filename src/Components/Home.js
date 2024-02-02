@@ -1,11 +1,13 @@
-import logo from "../../Resources/laptop.png"
+
 import { Link } from "react-router-dom"
+import Carausal from "./Carausal";
 
 const Home=()=>{
+
     return(
         <div className="flex h-[64rem] w-[90rem] m-[0] relative">
-            <div className="w-[45rem] h-[64rem] m-[0]" style={{"background": "linear-gradient(180deg, #0A0808 0%, rgba(51, 51, 51, 0.00) 100%)"}}> 
-                <img className="w-[45rem] h-[64rem] " src={logo}/>
+            <div className="w-[45rem] h-[64rem] m-[0]" style={{"background": "linear-gradient(180deg, #0A0808 0%, rgba(51, 51, 51, 0.00) 100%)"}}>
+                <Carausal/>
             </div>
             <div className="w-[45rem] h-[64rem] m-auto flex flex-col justify-center items-center gap-[6.62rem]" style={{"background": "linear-gradient(180deg, #000 0%, rgba(51, 51, 51, 0.00) 100%)"}}>
                 <div className="w-[36.25rem] h-[16.875rem] mx-auto text-white font-Poppins text-[8.125rem] font-bold leading-[130.769%]">
